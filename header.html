@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIGBANG</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    #language {
+      display: flex;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      /* background-color: black; */
+      /* padding: 10px; */
+      text-align: center;
+      justify-content: flex-end;
+      flex-direction: row;
+      gap: 10px;
+      font-size: x-small;
+      cursor: pointer;
+    }
+
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #navbar div {
+      grid-template-columns: 10fr;
+      /* background-color: black; */
+      padding: 30px;
+      text-align: center;
+      justify-content: flex-end;
+      flex-direction: row;
+      gap: 50px;
+    }
+    #navbar div:hover {
+      display: grid;
+      cursor: pointer;
+    }
+
+    .rotate {
+      background-image: url(./asset/1.jpg);
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+      width: 250px;
+      height: 250px;
+    }
+
+    .rotate:hover {
+      transform: rotate(360deg);
+      transition: all 2s;
+    }
+
+    #pictgrid {
+      display: flex;
+      gap: 100px;
+    }
+
+    #music {
+      display: flex;
+      gap: 270px;
+      align-items: center;
+      padding: 5%;
+    }
+
+    .overview {
+      display: flex;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      justify-items: center;
+    }
+
+    .overview img {
+      width: 150px;
+      height: 150px;
+      padding: 20px;
+    }
+  </style>
+
+  <body>
+    <div id="language">
+      <div>KOREAN</div>
+
+      <div>ENGLISH</div>
+
+      <div>CHINESE</div>
+
+      <div>JAPANESE</div>
+    </div>
+
+    <div id="navbar">
+      <div>
+        <img src="./asset/logo2.jpg" alt="" width="100" height="100" />
+      </div>
+
+      <div style="display: flex">
+        <div>Main</div>
+        <div>Album</div>
+        <div>MV</div>
+        <div>Event</div>
+      </div>
+    </div>
+    <div>
+      <p>권지용</p>
+      <h1>KWON JI YOUNG</h1>
+    </div>
+    <div id="pictgrid">
+      <div class="rotate"></div>
+      <div style="text-align: center">
+        <p>Kwon Ji-yong,</p>
+        <p>also known by his stage name G-Dragon,</p>
+        <p>is a South Korean rapper, singer-songwriter, record producer,</p>
+        <p>entrepreneur and fashion designer,</p>
+        <p>known as the "King of K-pop"</p>
+      </div>
+    </div>
+
+    <div>
+      <div
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: smaller;
+          text-align: center;
+          background-color: #815b5b;
+        "
+      >
+        <h1 style="letter-spacing: 10px; font-style: oblique">
+          L i s t e n N o w
+        </h1>
+      </div>
+      <div id="music">
+        <i class="fa fa-youtube fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-spotify fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-music fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="overview">
+      <img src="./asset/2.jpg" alt="" height="250" />
+      <h4>Born : August 18 , 1988 ( age 34 years)</h4>
+      <img src="./asset/3.jpg" alt="" height="250" />
+      <h4>Seoul, South Korea</h4>
+      <img src="./asset/4.jpg" alt="" height="250" />
+      <h4>Height: 1.72 m</h4>
+      <img src="./asset/5.jpg" alt="" height="250" />
+      <h4>Record labels: YG Entertainment, Warner Music Group</h4>
+    </div>
+  </body>
+</html>
